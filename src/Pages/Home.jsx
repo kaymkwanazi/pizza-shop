@@ -3,6 +3,7 @@ import homeImg from '../images/pizza-home.jpg'
 import pizza from '../images/pizza3.jpg'
 import { Link } from 'react-router-dom'
 import { Ingredients } from '../components/Ingredients'
+import { Specialities } from '../components/Specialities'
 
 
 export const Home = () => {
@@ -28,6 +29,7 @@ export const Home = () => {
         </div>
       </div>
       <Ingredients />
+      <Specialities />
     </>
   )
 }

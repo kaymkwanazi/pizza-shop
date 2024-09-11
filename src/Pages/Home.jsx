@@ -10,7 +10,7 @@ export const Home = () => {
   return (
     <>
     
-      <div className='flex items-center justify-center relative h-screen bg-cover bg-no-repeat bg-slate-200' style={{backgroundImage: `url(${pizza})`}}>
+      <div className='flex items-center justify-center relative h-screen bg-cover bg-slate-200' style={{backgroundImage: `url(${pizza})`}}>
         <div className='absolute inset-0 bg-black bg-opacity-50'>
           <div className="absolute inset-0 flex items-center justify-center">
           <div className='text-center'>

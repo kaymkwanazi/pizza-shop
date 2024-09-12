@@ -8,7 +8,6 @@ import axios from 'axios'
 import { MenuComp } from '../components/MenuComp'
 
 export const OurMenu = () => {
-  // console.log(Menu[0]);
   
   return (
     <>

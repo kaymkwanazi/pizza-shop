@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <div className=' bg-blue-900'>
       <div className='container mx-auto px-4'>
-      <div className='grid cols-1 md:grid-cols-2 gap-12'>
+      <div className='grid cols-1 md:grid-cols-2 gap-10'>
         <div>
           <p className='italic text-white text-xl md:text-2xl cursor-pointer mt-20'><CiPizza size={28} className='inline'/>Pizza-shop</p>
            <div className='text-white flex space-x-5 mt-10'>

@@ -3,25 +3,30 @@
         "menu":[
             {
                 "category": "Pasta",
+                "description": "At The Pizza Shop, we take pride in our homemade pasta dishes made with only the freshest ingredients. From classic spaghetti to more unique pasta creations, our menu has something for everyone to enjoy.",
                  "items": [
                     {
+                        "id" : 1,
                         "name": "SPAGHETTI BOLOGNESE",
-                        "description" : "Claasic spaghetti with our homemade meat sauce.",
+                        "description" : "Classic spaghetti with our homemade meat sauce.",
                         "imageUrl" : "https://images.nightcafe.studio/jobs/glOVdxT7DNL5uHI3NUgA/glOVdxT7DNL5uHI3NUgA--1--v36er.jpg?tr=w-1600,c-at_max"
                     },
                     {
+                        "id" : 2,
                         "name": "THREE-CHEESE MEATBALL MOSTACCIOLI",
                         "description" : "Mostaccioli, ricotta, ground beef, our homemade pasta sauce with meat and homemade meatballs",
                         "imageUrl": "https://bing.com/th?id=OSK.4b6144744c6b4cbf815f3e88a08b46ce"
                     },
                     {
+                        "id" : 3,
                         "name": "FETTICINE ALFREDO",
-                        "description" : "Fettuccine, butter, heavy cream, Parmesan, Romano and egg",
+                        "description" : "Fettuccine, butter, heavy cream, Parmesan, Romano and eggs.",
                         "imageUrl": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Quick-Fettuccini-Alfredo_EXPS_FT20_40586_F_0513_1_HOME-12.jpg?fit=700,700"
                     },
                     {
+                        "id" : 4,
                         "name": "SPICY CHICKEN AND TOMATO PASTA",
-                        "description" : "Chicken broth, our homemade tomato sauce, chicken breasts and pasta",
+                        "description" : "Chicken broth, our homemade tomato sauce, chicken breasts and pasta.",
                         "imageUrl": "https://www.tasteofhome.com/wp-content/uploads/2024/08/Spicy-Chicken-and-Tomato-Pasta_FT21_15767_F_0528_1.jpg?fit=700,700"
                     }
     
@@ -29,33 +34,40 @@
             },
             {
                 "category": "Pizza",
+                "description":"At The Pizzeria, we take pride in our authentic wood-fired pizzas made with only the freshest ingredients. From classic Margherita to more unique pizza creations, our menu has something for everyone to enjoy.",
                 "items": [
                     {
+                        "id" : 5,
                         "name": "MARGHARITA",
                         "description" : "Classic pizza with fresh mozzarella, tomato and basil.",
                         "imageUrl" : "https://th.bing.com/th/id/OIP.aArvKTYrTvi7yF94j3lE1AHaJQ?w=730&h=913&rs=1&pid=ImgDetMain"
                     },
                     {
+                        "id" : 6,
                         "name": "BISMARK PIZZA",
                         "description" : "Italian-style pizza with homemade tomato sauce and cheese topped with cooked ham and egg.",
                         "imageUrl" : "https://www.butter-n-thyme.com/wp-content/uploads/2023/03/Bismark-Pizza.jpg"
                     },
                     {
+                        "id" : 7,
                         "name": "QUATTRO FORMAGGI",
                         "description" : "Pizza with four different types of cheese.",
                         "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/6339a7932cd563166c528f94_SPICY%2520FENNEL-p-500.webp"
                     },
                     {
+                        "id" : 8,
                         "name": "PROSCIUTTO E RUCOLA",
                         "description" : "Pizza with prosciutto and arugula.",
                         "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/633a8d7c1badd97702e52ceb_pizzeria-pasta-img--p-500.webp"
                     },
                     {
+                        "id" : 9,
                         "name": "CALZONE",
                         "description" : "Folded pizza stuffed with mozzarella, ham and mushrooms.",
                         "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/6339a7932cd56349dd528f85_pizzeria-template-about-header-p-500.webp"
                     },
                     {
+                        "id" : 10,
                         "name": "FUNGHI",
                         "description" : "Pizza with mushrooms, mozzarella and truffle oil.",
                         "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/633a8db5d9585906b1f6d879_pizzeria-pasta-img-1-p-500.webp"
@@ -64,23 +76,28 @@
             },
             {
                 "category": "Dessert",
+                "description": "At The Pizzeria, we have a delicious selection of desserts to finish off your meal. From traditional Italian favorites to more unique creations, our menu has something for everyone to enjoy.",
                 "items":[
                     {
+                        "id" : 11,
                         "name": "ITALIAN CANNOLI",
-                        "description" : " traditional Sicilian pastry dessert that consists of a fried and crispy pastry shell, stuffed with a creamy ricotta filling and chocolate chips.",
+                        "description" : " Traditional Sicilian pastry dessert that consists of a fried and crispy pastry shell, stuffed with a creamy ricotta filling and chocolate chips.",
                         "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/6339a7932cd5633771528f95_ITALIAN%2520CANNOLI-p-500.webp"
                     },
                     {
+                        "id" : 12,
                         "name": "CARROT CAKE",
                         "description" : "Classic carrot cake recipe.",
                         "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/6339a7932cd5636b47528f96_CARROT%2520CAKE-p-500.webp"
                     },
                     {
+                        "id" : 13,
                         "name": "TIRAMISU",
                         "description" : "Italian dessert made of ladyfinger pastries dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone and flavoured with cocoa.",
                         "imageUrl" : "https://www.tasteofhome.com/wp-content/uploads/2018/01/Contest-Winning-Easy-Tiramisu_EXPS_CF2BZ20_41987_E11_20_2b.jpg?fit=700,700"
                     },
                     {
+                        "id" : 14,
                         "name": "CREAMY PIE",
                         "description" : "Creamy pie, made with whipped cream and cheese inside buttery graham cracker crust.",
                         "imageUrl" : "https://www.tasteofhome.com/wp-content/uploads/2018/01/Easy-Cream-Pie_EXPS_FT23_199552_EC_101823_3.jpg?fit=700,700"

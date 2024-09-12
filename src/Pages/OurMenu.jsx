@@ -4,19 +4,11 @@ import pasta from '../images/pasta-top.png'
 import pizzaTop from '../images/top-pizza.png'
 import dessert from '../images/dessert-2.jpg'
 import axios from 'axios'
+// import Menu from '../../Database/menu.json'
+import { MenuComp } from '../components/MenuComp'
 
 export const OurMenu = () => {
-  const [menuData, setMenuData] = useState([]);
-
-  useEffect(() => {
-    axios.get('/menu.json')
-      .then(response => {
-        console.log(response.data);
-        setMenuData(response.data);
-      })
-
-      .catch(error => console.error('Error fetching the menu data:', error));
-  }, []);
+  // console.log(Menu[0]);
   
   return (
     <>
@@ -47,32 +39,8 @@ export const OurMenu = () => {
         </div>
       </div>
     </div>
-
-    {/* Menu */}
-    <div className='container mx-auto px-4 my-80'>
-      <div className='border-y'>
-        <div className='container mx-auto md:pr-96'>
-          <h1 className='text-6xl md:text-4xl text-blue-700 font-bold mt-20 mb-5'>PASTA</h1>
-          <p className='text-base md:text-lg mb-20'>At The Pizza Shop, we take pride in our homemade pasta dishes made with only the freshest ingredients. 
-            From classic spaghetti to more unique pasta creations, our menu has something for everyone to enjoy.</p>
-          <div>
-          {menuData.map((category, index) => (
-        <div key={index} className="mb-6">
-          <h2 className="text-2xl font-bold mb-4">{category.category}</h2>
-          <ul className="list-disc list-inside">
-            {category.items.map((item, idx) => (
-              <li key={idx} className="ml-4">
-                <span className="font-semibold">{item.name}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-          </div>
-        </div>
-
-      </div>
-    </div>
+    <MenuComp />
+   
    
     </>
   )

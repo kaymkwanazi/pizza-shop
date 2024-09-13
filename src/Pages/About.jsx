@@ -23,13 +23,13 @@ export const About = () => {
         <h1 className='text-blue-700 font-bold text-2xl pt-10 mb-5'>OUR STORY</h1>
         <p className='font-bold text-6xl mb-10'>FROM TRADITION TO INNOVATION</p>
         <div className='grid cols-1 md:grid-cols-2 space-x-10'>
-            <div>
-              <img src= {Founder} className='w-full h-3/5 mt-10 rounded-2xl'></img>
-              <p className='font-bold mt-5'>PATIENCE</p>
+            <div className='mb-10'>
+              <img src= {Founder} className='w-full h rounded-2xl'></img>
+              <p className='font-bold pt-3'>PATIENCE</p>
               <p>Founder of The Pizza Shop</p>
             </div>
 
-          <div className='mt-10'>
+          <div className='py-48'>
             <div>
                 <h1 className='font-bold text-2xl mb-5'>OUR TRADITION</h1>
                 <p className='mb-10'>The Pizza Shop was founded by two friends who shared a passion for pizza. 

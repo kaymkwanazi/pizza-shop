@@ -1,6 +1,6 @@
 import React from 'react'
 import { CiPizza } from 'react-icons/ci'
-import { FaEnvelope, FaFacebook, FaInstagram, FaPhone, FaTwitter } from 'react-icons/fa'
+import { FaEnvelope, FaFacebook, FaInstagram, FaPhone, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { FaLocationDot, FaRegCopyright } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
@@ -15,6 +15,7 @@ export const Footer = () => {
               <FaTwitter size={28} />
               <FaFacebook size={28}/>
               <FaInstagram size={28} />
+              <FaYoutube size={28} />
             </div>
             <div className='text-white mt-10 mb-10'>
               <p className='mb-5'><FaLocationDot className='inline'/> 125 Church street, Pretoria CBD</p>

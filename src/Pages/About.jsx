@@ -1,6 +1,8 @@
 import React from 'react'
 import Pizza2 from '../images/pizzaMenu.jpg'
 import Founder from '../images/founder.jpeg'
+import { MdOutlineLocalPizza, MdOutlineStorefront } from "react-icons/md";
+import { IoReceiptSharp } from "react-icons/io5";
 
 export const About = () => {
   return (
@@ -17,12 +19,12 @@ export const About = () => {
     </div>
 
     <div className=' bg-slate-200'>
-      <div className='container mx-auto px-4 py-5'>
-        <h1 className='text-blue-700 font-bold text-2xl mt-20 mb-5'>OUR STORY</h1>
+      <div className='container mx-auto px-4'>
+        <h1 className='text-blue-700 font-bold text-2xl pt-10 mb-5'>OUR STORY</h1>
         <p className='font-bold text-6xl mb-10'>FROM TRADITION TO INNOVATION</p>
-        <div className='grid cols-1 md:grid-cols-2 space-x-5'>
+        <div className='grid cols-1 md:grid-cols-2 space-x-10'>
             <div>
-              <img src= {Founder} className='w-full h-3/5 mt-10 '></img>
+              <img src= {Founder} className='w-full h-3/5 mt-10 rounded-2xl'></img>
               <p className='font-bold mt-5'>PATIENCE</p>
               <p>Founder of The Pizza Shop</p>
             </div>
@@ -48,14 +50,57 @@ export const About = () => {
       </div>
     </div>
   </div>
-  <div className='bg-purple-700'>
-    <div className='container mx-auto px-4'>
-      <div className='grid grid-cols-1 md:grid-cols-2'>
-        <div className='border border-purple-900 rounded-lg bg-purple-900 mt-20 mb-20 px-10 py-10'>
-          <h3 className='text-purple-400 font-bold text-2xl mb-5'>IN STORE</h3>
-          <h3 className='text-slate-400 font-bold text-3xl mb-10'>VISIT US</h3>
-          <p className=' text-white mb-10'>At The Pizza Shop, we invite you to come and enjoy authentic Italian cuisine in our cozy and welcoming environment.</p>
 
+  <div className='bg-purple-900 text-white rounded-xl mb-16'>
+    <div className='container mx-auto px-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+        <div className='border border-purple-950 rounded-2xl bg-purple-950 mt-20 mb-20 px-10 py-10'>
+          <h3 className='text-pink-200 font-bold text-2xl mb-5'>IN STORE</h3>
+          <h3 className=' text-white font-bold text-3xl mb-10'>VISIT US</h3>
+          <p className=' text-gray-300 mb-6'>At The Pizza Shop, we invite you to come and enjoy authentic Italian cuisine in our cozy and welcoming environment.</p>
+          
+          {/* Location section */}
+          <div className='flex items-start mb-6 mt-16'>
+            <MdOutlineStorefront className='text-pink-200 text-6xl mr-4'/>
+            <div className='ml-5'>
+              <h1 className='font-bold text-xl text-yellow-100 mb-3'>LOCATION</h1>
+              <p className='text-gray-300'>Find the nearest location to enjoy our food.</p>
+            </div>
+          </div>  
+
+           {/* Dine section */}
+           <div className='flex items-start mt-10'>
+            <MdOutlineLocalPizza className='text-pink-200 text-6xl mr-4'/>
+            <div className='ml-5'>
+              <h1 className='font-bold text-xl text-yellow-100 mb-3'>Dine-In</h1>
+              <p className='text-gray-300 mb-5'>Enjoy your meal in our comfortable dining room.</p>
+            </div>
+           </div>
+        </div>
+
+      {/* 2nd column */}
+        <div className='border border-purple-950 rounded-2xl bg-purple-950 mt-20 mb-20 px-10 py-10'>
+          <h3 className='text-pink-200 font-bold text-2xl mb-5'>AT HOME</h3>
+          <h3 className=' text-white font-bold text-3xl mb-10'>GET CREATIVE</h3>
+          <p className=' text-gray-300 mb-6'>At The Pizza Shop, we want to inspire you to get creative with your cooking and try making your own pizzas at home.</p>
+          
+          {/* Location section */}
+          <div className='flex items-start mb-6 mt-16'>
+          <MdOutlineLocalPizza className='text-pink-200 text-6xl mr-4'/>
+            <div className='ml-5'>
+              <h1 className='font-bold text-xl text-yellow-100 mb-3'>Take-Out</h1>
+              <p className='text-gray-300'>Grab a slice or two to go.</p>
+            </div>
+          </div>  
+
+           {/*  */}
+           <div className='flex items-start mt-10'>
+            <IoReceiptSharp className='text-pink-200 text-6xl mr-4'/>
+            <div className='ml-5'>
+              <h1 className='font-bold text-xl text-yellow-100 mb-3'>Recipes</h1>
+              <p className='text-gray-300 mb-5'>Try our authentic pizza recipes at home.</p>
+            </div>
+           </div>
         </div>
 
       </div>

@@ -19,7 +19,7 @@ export const ContactPage = () => {
             <div className='bg-white border px-10 py-10 rounded-2xl mt-10'>
                 <div className='flex flex-col'>
                     <h1 className='text-2xl font-bold text-gray-700 mb-5 ml-5'>PRESS INQUIRIES</h1>
-                    <p className='mb-5 ml-5'>Reach out to us, we're dying to hear from you today</p>
+                    <p className='mb-5 ml-5'>Reach out to us or visit us to place your order now</p>
                         <div className='ml-5 mt-10'>
                             <p className='pb-5'><FaEnvelope className='inline text-2xl'/> info@thepizzashop.co.za</p>
                             <p className='pb-5'><FaPhone className='inline text-2xl'/> +27 12 459 2652</p>

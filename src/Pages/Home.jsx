@@ -20,7 +20,7 @@ export const Home = () => {
             <Link to='/menu'>
               <button className='text-white bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-2xl mt-10'>View our menu</button>
             </Link>
-            <Link to = '/order'>
+            <Link to = '/contact'>
               <button className='border-2 bg-white hover:bg-slate-300 border-blue-700 px-5 py-3 ml-10 rounded-2xl mt-10'>Order Online Now</button>
             </Link>
             

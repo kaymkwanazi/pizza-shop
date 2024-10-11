@@ -1,7 +1,14 @@
 import React from 'react';
 import Menu from '../../Database/menu.json';
+import { useNavigate } from 'react-router-dom';
 
 export const MenuComp = () => {
+  const navigate = useNavigate();
+
+  const handleItemClick = (item) => {
+    navigate(`/IngredientsList/$item.id`, {state: {item}});
+  };
+  
   return (
     <div className="grid cols-1 gap-4 mt-80">
       <div className='container mx-auto px-4 border-y mb-36'>
@@ -11,8 +18,8 @@ export const MenuComp = () => {
           <p className="text-xl mb-20">{products.description}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             {products.items.map((item) => (
-              <div key={item.id} className="flex flex-col">
-                <img src={item.imageUrl} alt={item.name} className="w-52 h-52 object-cover mb-4" />
+              <div key={item.id} className="flex flex-col cursor-pointer" onClick={() => handleItemClick(item)}>
+                <img src={item.imageUrl} alt={item.name} className="w-52 h-52 object-cover mb-4 transform transition duration-300 hover:scale-110" />
                 <h1 className="font-bold text-xl md:text-2xl mb-3">{item.name}</h1>
                 <p className="mb-5 ">{item.description}</p>
               </div>

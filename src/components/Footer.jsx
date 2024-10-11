@@ -10,7 +10,7 @@ export const Footer = () => {
       <div className='container mx-auto px-4'>
       <div className='grid cols-1 md:grid-cols-2 gap-10'>
         <div>
-          <p className='italic text-white text-xl md:text-2xl cursor-pointer mt-20'><CiPizza size={28} className='inline'/>Pizza-shop</p>
+          <p className='italic text-white text-xl md:text-2xl cursor-pointer mt-10'><CiPizza size={28} className='inline'/>Pizza-shop</p>
            <div className='text-white flex space-x-5 mt-10'>
               <FaTwitter size={28} />
               <FaFacebook size={28}/>
@@ -23,15 +23,15 @@ export const Footer = () => {
               <p className='mb-5 '><FaEnvelope className='inline' /> info@thepizzashop.co.za</p>
             </div>
         </div>
-        <div className='mt-20 font-bold'>
+        <div className='mt-10 font-bold'>
         <Link to = '/' className='px-6 py-2 rounded-2xl hover:text-gray-300 text-white'>Home</Link>
         <Link to = '/menu' className='px-6 py-2 rounded-2xl hover:text-gray-300 text-white'>Menu</Link>
         <Link to = '/about' className='px-6 py-2 rounded-2xl hover:text-gray-300 text-white'>About</Link>
         <Link to = '/contact' className='px-6 py-2 rounded-2xl hover:text-gray-300 text-white'>Contact</Link>
         </div>
       </div>
-      <div className='text-white border-t mt-10'>
-        <p className='text-center text-sm pt-5 pb-16'><FaRegCopyright className='inline' /> The Pizza Shop. All rights reserved</p>
+      <div className='text-white border-t'>
+        <p className='text-center text-sm p-5'><FaRegCopyright className='inline' /> The Pizza Shop. All rights reserved</p>
       </div>
       </div>
     </div>

@@ -9,13 +9,24 @@
                         "id" : 1,
                         "name": "SPAGHETTI BOLOGNESE",
                         "description" : "Classic spaghetti with our homemade meat sauce.",
-                        "imageUrl" : "https://images.nightcafe.studio/jobs/glOVdxT7DNL5uHI3NUgA/glOVdxT7DNL5uHI3NUgA--1--v36er.jpg?tr=w-1600,c-at_max"
+                        "imageUrl" : "https://images.nightcafe.studio/jobs/glOVdxT7DNL5uHI3NUgA/glOVdxT7DNL5uHI3NUgA--1--v36er.jpg?tr=w-1600,c-at_max",
+                        "ingredients" : [
+                            ""
+                        ]
                     },
                     {
                         "id" : 2,
                         "name": "THREE-CHEESE MEATBALL MOSTACCIOLI",
-                        "description" : "Mostaccioli, ricotta, ground beef, our homemade pasta sauce with meat and homemade meatballs",
-                        "imageUrl": "https://bing.com/th?id=OSK.4b6144744c6b4cbf815f3e88a08b46ce"
+                        "description" : "Simple yet flavorful, this baked pasta dish will become a favorite for your dinner table.",
+                        "imageUrl": "https://bing.com/th?id=OSK.4b6144744c6b4cbf815f3e88a08b46ce",
+                        "ingredients" : [
+                            "Mostaccioli",
+                            "Ricotta",
+                            "Ground beef",
+                            "Our homemade pasta sauce with meat",
+                            "Homemade meatballs"
+
+                        ]
                     },
                     {
                         "id" : 3,

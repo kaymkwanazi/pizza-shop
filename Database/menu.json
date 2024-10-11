@@ -31,14 +31,73 @@
                     {
                         "id" : 3,
                         "name": "FETTICINE ALFREDO",
-                        "description" : "Fettuccine, butter, heavy cream, Parmesan, Romano and eggs.",
-                        "imageUrl": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Quick-Fettuccini-Alfredo_EXPS_FT20_40586_F_0513_1_HOME-12.jpg?fit=700,700"
+                        "description" : "This heavenly cream sauce comes to life with a dash of earthy nutmeg and black pepper.",
+                        "imageUrl": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Quick-Fettuccini-Alfredo_EXPS_FT20_40586_F_0513_1_HOME-12.jpg?fit=700,700",
+                        "ingredients" : [
+                            "Fettuccine",
+                            "butter",
+                            "heavy cream",
+                            "Parmesan",
+                            "Romano cheese",
+                            "eggs"
+
+                        ]
                     },
                     {
                         "id" : 4,
                         "name": "SPICY CHICKEN AND TOMATO PASTA",
-                        "description" : "Chicken broth, our homemade tomato sauce, chicken breasts and pasta.",
-                        "imageUrl": "https://www.tasteofhome.com/wp-content/uploads/2024/08/Spicy-Chicken-and-Tomato-Pasta_FT21_15767_F_0528_1.jpg?fit=700,700"
+                        "description" : "This Spicy Chicken Pasta is the perfect level of spice, whilst absolutely bursting with flavour. ",
+                        "imageUrl": "https://www.tasteofhome.com/wp-content/uploads/2024/08/Spicy-Chicken-and-Tomato-Pasta_FT21_15767_F_0528_1.jpg?fit=700,700",
+                        "ingredients" : [
+                            "pasta",
+                            "chicken broth", 
+                            "our homemade tomato sauce", 
+                            "chicken breasts"                
+
+                        ]
+                    },
+                    {
+                        "id" : 5,
+                        "name": "LASAGNA",
+                        "description" : "This heavenly cream sauce comes to life with a dash of earthy nutmeg and black pepper.",
+                        "imageUrl": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Best-Lasagna_EXPS_FT24_36333_0326_JR_2.jpg?fit=700,700",
+                        "ingredients" : [
+                            "Lasagna noodles", 
+                            "Italian sausage", 
+                            "ground beef",
+                            "onion",
+                            "garlic", 
+                            "crushed tomatoes",
+                            "tomato paste", 
+                            "parsley", 
+                            "eggs",
+                            "Ricotta",
+                            "Mozzarella",
+                            "Parmesan"                  
+
+                        ]
+                    },
+                    {
+                        "id" : 6,
+                        "name": "RAVIOLI",
+                        "description" : "This dish is made with delicate pasta dough and a creamy cheese filling.",
+                        "imageUrl": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Homemade-Ravioli_EXPS_FT24_41527_ST_0221_2.jpg?fit=700,700",
+                        "ingredients" : [
+                            "flour",  
+                            "crushed tomatoes",
+                            "tomato puree", 
+                            "tomato paste", 
+                            "parsley", 
+                            "basil", 
+                            "oregano", 
+                            "garlic", 
+                            "eggs",
+                            "ricotta",
+                            "mozzarella",
+                            "parmesan"                  
+
+                        ]
+                       
                     }
     
                 ]

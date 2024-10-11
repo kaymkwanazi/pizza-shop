@@ -8,7 +8,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-   <nav className='absolute m-4 top-0 z-50 w-full'>
+   <nav className='z-50 w-full bg-slate-600'>
     <div className='container px-2 flex justify-between items-center h-16'>
       <Link to='/'>
         <p className='italic text-white md:text-2xl cursor-pointer'><CiPizza size={28} className='inline'/>Pizza-shop</p>

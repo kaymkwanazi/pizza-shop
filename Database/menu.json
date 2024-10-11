@@ -178,18 +178,14 @@
                         "description" : "A calzone is a sort of enclosed pizza, like it has been folded in half. It originated in Naples, Italy.",
                         "imageUrl" : "https://therecipecritic.com/wp-content/uploads/2020/02/calzone-7.jpg",
                         "ingredients" : [
-                            "Lasagna noodles", 
-                            "Italian sausage", 
-                            "ground beef",
-                            "onion",
-                            "garlic", 
-                            "crushed tomatoes",
-                            "tomato paste", 
-                            "parsley", 
-                            "eggs",
-                            "Ricotta",
+                            "Homemade pizza dough", 
+                            "Homemade pizza sauce", 
                             "Mozzarella",
-                            "Parmesan"                  
+                            "Cheddar cheese",
+                            "Mushrooms", 
+                            "Pepperoni",
+                            "Ricotta cheese",
+                            "Basil"                
 
                         ]
                     },

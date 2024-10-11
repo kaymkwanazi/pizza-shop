@@ -11,7 +11,11 @@
                         "description" : "Classic spaghetti with our homemade meat sauce.",
                         "imageUrl" : "https://images.nightcafe.studio/jobs/glOVdxT7DNL5uHI3NUgA/glOVdxT7DNL5uHI3NUgA--1--v36er.jpg?tr=w-1600,c-at_max",
                         "ingredients" : [
-                            ""
+                            "Spaghetti",
+                            "Parmesan",
+                            "Homemade meatballs",
+                            "Our homemade tomato sauce",
+                            "Ground beef"
                         ]
                     },
                     {
@@ -107,37 +111,90 @@
                 "description":"At The Pizzeria, we take pride in our authentic wood-fired pizzas made with only the freshest ingredients. From classic Margherita to more unique pizza creations, our menu has something for everyone to enjoy.",
                 "items": [
                     {
-                        "id" : 5,
-                        "name": "MARGHARITA",
-                        "description" : "Classic pizza with fresh mozzarella, tomato and basil.",
-                        "imageUrl" : "https://th.bing.com/th/id/OIP.aArvKTYrTvi7yF94j3lE1AHaJQ?w=730&h=913&rs=1&pid=ImgDetMain"
-                    },
-                    {
-                        "id" : 6,
-                        "name": "BISMARK PIZZA",
-                        "description" : "Italian-style pizza with homemade tomato sauce and cheese topped with cooked ham and egg.",
-                        "imageUrl" : "https://www.butter-n-thyme.com/wp-content/uploads/2023/03/Bismark-Pizza.jpg"
-                    },
-                    {
                         "id" : 7,
-                        "name": "QUATTRO FORMAGGI",
-                        "description" : "Pizza with four different types of cheese.",
-                        "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/6339a7932cd563166c528f94_SPICY%2520FENNEL-p-500.webp"
+                        "name": "MARGHARITA PIZZA",
+                        "description" : "Savor the classic flavors of Italy with a crispy thin-crust Margherita pizza that rivals your favorite pizzeria.",
+                        "imageUrl" : "https://th.bing.com/th/id/OIP.aArvKTYrTvi7yF94j3lE1AHaJQ?w=730&h=913&rs=1&pid=ImgDetMain",
+                        "ingredients" : [
+                            "Homemade pizza dough", 
+                            "Crushed tomatoes",
+                            "Mozzarella",
+                            "Parmigiano-Reggiano",
+                            "Garlic",
+                            "Basil"
+
+                        ]
                     },
                     {
                         "id" : 8,
-                        "name": "PROSCIUTTO E RUCOLA",
-                        "description" : "Pizza with prosciutto and arugula.",
-                        "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/633a8d7c1badd97702e52ceb_pizzeria-pasta-img--p-500.webp"
+                        "name": "DIAVOLA",
+                        "description" : "If you're up for something spicy, the Diavola is your best choice.",
+                        "imageUrl" : "https://nomadparadise.com/wp-content/uploads/2023/07/italian-pizza-03-1200x800.jpg",
+                        "ingredients" : [
+                            "Homemade pizza dough", 
+                            "Mozzarella",
+                            "Homemade pizza sauce",
+                            "Chili pepper",
+                            "Spicy salami",
+                            "Black olives"
+                                            
+                        ]
                     },
                     {
                         "id" : 9,
-                        "name": "CALZONE",
-                        "description" : "Folded pizza stuffed with mozzarella, ham and mushrooms.",
-                        "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/6339a7932cd56349dd528f85_pizzeria-template-about-header-p-500.webp"
+                        "name": "QUATTRO FORMAGGI",
+                        "description" : "Pizza with four different types of cheese.",
+                        "imageUrl" : "https://www.lekkerensimpel.com/wp-content/uploads/2020/11/IMG_5767-1-1920x920.jpg",
+                        "ingredients" : [
+                            "Homemade pizza dough", 
+                            "Homemade pizza sauce", 
+                            "Mozzarella", 
+                            "Goay cheese", 
+                            "Gorgonzola", 
+                            "Parmesan", 
+                            "Pepper",
+                            "Salt and pepper"
+                                             
+                        ]
                     },
                     {
                         "id" : 10,
+                        "name": "QUATTRO STAGIONI (FOUR SEASONS PIZZA)",
+                        "description" : "Quattro Stagioni is a pizza topped with a variety of ingredients, except they are placed separately into four distinct quarters.",
+                        "imageUrl" : "https://nomadparadise.com/wp-content/uploads/2023/07/italian-pizza-06-1200x800.jpg",
+                        "ingredients" : [
+                            "Homemade pizza dough", 
+                            "Homemade pizza sauce", 
+                            "Mozzarella",
+                            "Black olives",
+                            "Italian ham", 
+                            "Mushrooms"                  
+
+                        ]
+                    },
+                    {
+                        "id" : 11,
+                        "name": "CALZONE",
+                        "description" : "Folded pizza stuffed with mozzarella, ham and mushrooms.",
+                        "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/6339a7932cd56349dd528f85_pizzeria-template-about-header-p-500.webp",
+                        "ingredients" : [
+                            "Lasagna noodles", 
+                            "Italian sausage", 
+                            "ground beef",
+                            "onion",
+                            "garlic", 
+                            "crushed tomatoes",
+                            "tomato paste", 
+                            "parsley", 
+                            "eggs",
+                            "Ricotta",
+                            "Mozzarella",
+                            "Parmesan"                  
+
+                        ]
+                    },
+                    {
+                        "id" : 12,
                         "name": "FUNGHI",
                         "description" : "Pizza with mushrooms, mozzarella and truffle oil.",
                         "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/633a8db5d9585906b1f6d879_pizzeria-pasta-img-1-p-500.webp"
@@ -149,7 +206,7 @@
                 "description": "At The Pizzeria, we have a delicious selection of desserts to finish off your meal. From traditional Italian favorites to more unique creations, our menu has something for everyone to enjoy.",
                 "items":[
                     {
-                        "id" : 11,
+                        "id" : 13,
                         "name": "ITALIAN CANNOLI",
                         "description" : " Traditional Sicilian pastry dessert that consists of a fried and crispy pastry shell, stuffed with a creamy ricotta filling and chocolate chips.",
                         "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/6339a7932cd5633771528f95_ITALIAN%2520CANNOLI-p-500.webp"

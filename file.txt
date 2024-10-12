@@ -1,0 +1,58 @@
+import React, { useState, useEffect } from 'react';
+import menuData from './menu.json'; // Import your JSON data !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+const Menu = () => {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [menu, setMenu] = useState([]);
+
+  
+  useEffect(() => {
+    setMenu(menuData.menu); 
+  }, []);
+
+  // Handle category filter
+  const handleCategoryChange = (e) => {
+    setSelectedCategory(e.target.value);
+  };
+
+ 
+  const filteredMenu = selectedCategory === 'All'
+    ? menu 
+    : menu.filter((menuCategory) => menuCategory.category === selectedCategory);
+
+  return (
+    <div>
+      {/* Category filter */}
+      <select value={selectedCategory} onChange={handleCategoryChange}>
+        <option value="All">All</option>
+        <option value="Pasta">Pasta</option>
+        <option value="Pizza">Pizza</option>
+        <option value="Dessert">Dessert</option>
+      </select>
+
+      {/* Display filtered menu */}
+      <div>
+        {filteredMenu.map((menuCategory) => (
+          <div key={menuCategory.category}>
+            <h2>{menuCategory.category}</h2>
+            <p>{menuCategory.description}</p>
+            {menuCategory.items.map((item) => (
+              <div key={item.id}>
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <img src={item.imageUrl} alt={item.name} style={{ width: '150px' }} />
+                <ul>
+                  {item.ingredients.map((ingredient, index) => (
+                    <li key={index}>{ingredient}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Menu;

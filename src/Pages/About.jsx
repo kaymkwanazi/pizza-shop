@@ -11,7 +11,7 @@ export const About = () => {
         style={{backgroundImage: `url(${Pizza2})`}}>
         <div className='absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center'>
           <h1 className='text-white font-bold text-8xl md:text-4xl'>ABOUT</h1> 
-          <p className='text-white text-2xl text-center px-28 mt-20'>At The Pizza Shop, we are passionate about providing our customers with the most delicious and authentic Italian cuisine. 
+          <p className='text-white md:first-line:text-2xl text-center px-28 mt-20'>At The Pizza Shop, we are passionate about providing our customers with the most delicious and authentic Italian cuisine. 
             Our team of skilled chefs use only the freshest ingredients to create a menu of classic and unique dishes that will delight your taste buds. 
             From our homemade pasta and wood-fired pizzas to our selection of desserts, we strive to make every dining experience at The Pizzeria a memorable one. 
             We invite you to come and taste the difference for yourself.</p> 
@@ -21,7 +21,7 @@ export const About = () => {
     <div className=' bg-slate-200'>
       <div className='container mx-auto px-4'>
         <h1 className='text-blue-700 font-bold text-2xl pt-10 mb-5'>OUR STORY</h1>
-        <p className='font-bold text-6xl mb-10'>FROM TRADITION TO INNOVATION</p>
+        <p className='font-bold text-3xl md:text-6xl mb-10'>FROM TRADITION TO INNOVATION</p>
         <div className='grid cols-1 md:grid-cols-2 space-x-10'>
             <div className='mb-10'>
               <img src= {Founder} className='w-full h rounded-2xl'></img>

@@ -192,8 +192,17 @@
                     {
                         "id" : 12,
                         "name": "FUNGHI",
-                        "description" : "Pizza with mushrooms, mozzarella and truffle oil.",
-                        "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/633a8db5d9585906b1f6d879_pizzeria-pasta-img-1-p-500.webp"
+                        "description" : "A funghi pizza, also known as a mushroom pizza, is a delightful Italian classic that celebrates the earthy flavours of mushrooms combined with creamy cheese.",
+                        "imageUrl" : "https://www.tasteatlas.com/images/dishes/08648360db374a7e939a0e5f19d8a7bd.jpg?mw=1300",
+                        "ingredients" : [
+                            "Homemade pizza dough", 
+                            "Mozzarella",
+                            "Parmesan",
+                            "Mushrooms", 
+                            "Parsly",
+                            "Basil"                
+
+                        ]
                     }
                 ]
             },
@@ -204,26 +213,92 @@
                     {
                         "id" : 13,
                         "name": "ITALIAN CANNOLI",
-                        "description" : " Traditional Sicilian pastry dessert that consists of a fried and crispy pastry shell, stuffed with a creamy ricotta filling and chocolate chips.",
-                        "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/6339a7932cd5633771528f95_ITALIAN%2520CANNOLI-p-500.webp"
-                    },
-                    {
-                        "id" : 12,
-                        "name": "CARROT CAKE",
-                        "description" : "Classic carrot cake recipe.",
-                        "imageUrl" : "https://assets.website-files.com/6339a7932cd5630a8a528f1d/6339a7932cd5636b47528f96_CARROT%2520CAKE-p-500.webp"
-                    },
-                    {
-                        "id" : 13,
-                        "name": "TIRAMISU",
-                        "description" : "Italian dessert made of ladyfinger pastries dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone and flavoured with cocoa.",
-                        "imageUrl" : "https://www.tasteofhome.com/wp-content/uploads/2018/01/Contest-Winning-Easy-Tiramisu_EXPS_CF2BZ20_41987_E11_20_2b.jpg?fit=700,700"
+                        "description" : "Italian cannoli are a classic Sicilian dessert renowned for their crispy pastry shells and creamy, sweet fillings",
+                        "imageUrl" : "https://amazingfoodanddrink.com/wp-content/uploads/2024/06/Italian-Cannoli-111.webp",
+                        "ingredients" : [
+                            "Flour", 
+                            "Sugar",
+                            "Cinnamon",
+                            "Egg yolk", 
+                            "Salted butter",
+                            "Basil",
+                            "Ricotta cheese",
+                            "Chocolate chips",
+                            "Lemon zest",
+                            "Chopped pistachios"              
+
+                        ]
                     },
                     {
                         "id" : 14,
+                        "name": "CARROT CAKE",
+                        "description" : "Classic carrot cake recipe.",
+                        "imageUrl" : "https://th.bing.com/th/id/OIP.E_H0IlKghZKEYKXVhgn5sgHaLH?rs=1&pid=ImgDetMain",
+                        "ingredients" : [
+                            "Flour", 
+                            "Sugar",
+                            "Cinnamon",
+                            "Carrots", 
+                            "Oil",
+                            "Cream cheese",
+                            "Icing sugar"                
+
+                        ]
+                    },
+                    {
+                        "id" : 15,
+                        "name": "TIRAMISU",
+                        "description" : "Italian dessert made of ladyfinger pastries dipped in coffee, layered with a whipped mixture of eggs, sugar, and mascarpone and flavoured with cocoa.",
+                        "imageUrl" : "https://tastesbetterfromscratch.com/wp-content/uploads/2017/04/Tiramisu-14.jpg",
+                        "ingredients" : [
+                            "Ladyfingers", 
+                            "Mascarpone",
+                            "Espresso",
+                            "Whipped cream", 
+                            "Cocoa powder",
+                            "Vanilla extract"                
+
+                        ]
+                    },
+                    {
+                        "id" : 16,
                         "name": "CREAMY PIE",
                         "description" : "Creamy pie, made with whipped cream and cheese inside buttery graham cracker crust.",
-                        "imageUrl" : "https://www.tasteofhome.com/wp-content/uploads/2018/01/Easy-Cream-Pie_EXPS_FT23_199552_EC_101823_3.jpg?fit=700,700"
+                        "imageUrl" : "https://www.tasteofhome.com/wp-content/uploads/2018/01/Easy-Cream-Pie_EXPS_FT23_199552_EC_101823_3.jpg?fit=700,700",
+                        "ingredients" : [
+                            "Crackers", 
+                            "Cream cheese",
+                            "Whipped cream",
+                            "Vanilla"
+                        ]
+                    },
+                    {
+                        "id" : 17,
+                        "name": "AFFOGATO",
+                        "description" : "“Affogato” means “to drown” in Italian and refers to the melding of espresso and ice cream, two after-dinner classics.",
+                        "imageUrl" : "https://www.foodandwine.com/thmb/sFRdDtthS5AkSTJXzcWcyLobScM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Affogato-FT-RECIPE1023-6b5da077aea946f2b489cee1246e5834.jpg",
+                        "ingredients" : [
+                            "Espresso", 
+                            "Vanilla ice cream"
+                        ]
+                    },
+                    {
+                        "id" : 18,
+                        "name": "FOUR LAYER CHOCOLATE DESSERT",
+                        "description" : "Creamy pie, made with whipped cream and cheese inside buttery graham cracker crust.",
+                        "imageUrl" : "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps187568_SD153320D12_05_1b-6.jpg?fit=500,500&webp=1",
+                        "ingredients" : [
+                            "Flour", 
+                            "Butter",
+                            "Cream cheese",
+                            "Chocolate chunks", 
+                            "Chocolate syrup",
+                            "Chopped walnuts",
+                            "Milk",
+                            "Chocolate pudding",
+                            "Whipped cream"               
+
+                        ]
                     }
                 ]
             }

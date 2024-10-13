@@ -216,3 +216,53 @@ const filteredMenu = selectedCategory === 'All'
         <p>No items found for this category.</p>
       )}
 
+--------------------------------------------------
+ useEffect(() => {
+        setMenu(menuData[0].menu); 
+        setFilteredMenu(menuData[0].menu);
+    }, []);
+
+    const handleCategoryChange = (event) => {
+        const category = event.target.value;
+        setSelectedCategory(category);
+
+        if (category === 'All') {
+            setFilteredMenu(menu); 
+        } else {
+            const filtered = menu.filter((menuCategory) => menuCategory.category === category);
+            setFilteredMenu(filtered); 
+        }
+    };
+
+
+ <select value={selectedCategory} onChange={handleCategoryChange}>
+                <option value="All">All</option>
+                {menu.map((category) => (
+                    <option key={category.category} value={category.category}>
+                        {category.category}
+                    </option>
+                ))}
+            </select>
+
+
+{filteredMenu.length > 0 ? (
+                    filteredMenu.map((category) => (
+                        <div key={category.category}>
+                            <h2>{category.category}</h2>
+                            <p>{category.description}</p>
+                            {/* Display items within each category */}
+                            <div>
+                                {category.items.map((item) => (
+                                    <div key={item.id}>
+                                        <h3>{item.name}</h3>
+                                        <img src={item.imageUrl} alt={item.name} width="200" />
+                                        <p>{item.description}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))
+                ) : (
+                    <p>No items found.</p>
+                )}
+            

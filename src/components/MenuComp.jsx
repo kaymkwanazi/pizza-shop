@@ -10,7 +10,7 @@ export const MenuComp = () => {
   };
   
   return (
-    <div className="grid cols-1 gap-4 mt-16">
+    <div className="grid cols-1 gap-4 mt-36 md:mt-64">
       <div className='container mx-auto px-5 bg-slate-100 border-2 mb-36'>
       {Menu[0].menu.map((products, index) => (
         <div key={index} className="mb-8 p-4">

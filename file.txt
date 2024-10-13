@@ -125,3 +125,53 @@ const filteredMenu = selectedCategory === 'All'
       ) : (
         <p>No items found for this category.</p>
       )}
+
+
+
+////////////////////////[[[[[[[[[[[[[[[
+
+ const handleCategoryChange = (e) => {
+    const value = e.target.value;
+    console.log("Selected category:", value); 
+    setSelectedCategory(value);
+  };
+
+  // Filter the menu based on the selected category
+  const filteredMenu = selectedCategory === 'All'
+    ? menu 
+    : menu.filter((menuCategory) => menuCategory.category === selectedCategory);
+
+
+
+
+ <select value={selectedCategory} onChange={handleCategoryChange}>
+        <option value="All">All</option>
+        <option value="Pasta">Pasta</option>
+        <option value="Pizza">Pizza</option>
+        <option value="Dessert">Dessert</option>
+      </select>
+
+
+
+ {Array.isArray(filteredMenu) && filteredMenu.length > 0 ? (
+        filteredMenu.map((menuCategory) => (
+          <div key={menuCategory.category}>
+            <h2>{menuCategory.category}</h2>
+            <p>{menuCategory.description}</p>
+            {Array.isArray(menuCategory.items) && menuCategory.items.map((item) => (
+              <div key={item.id}>
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <img src={item.imageUrl} alt={item.name} style={{ width: '150px' }} />
+                <ul>
+                  {Array.isArray(item.ingredients) && item.ingredients.map((ingredient, index) => (
+                    <li key={index}>{ingredient}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        ))
+      ) : (
+        <p>No items found for this category.</p>
+      )}

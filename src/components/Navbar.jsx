@@ -8,8 +8,8 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-   <nav className='z-50 w-full bg-slate-600'>
-    <div className='container px-2 flex justify-between items-center h-16'>
+   <nav className='z-50 max-w-full bg-slate-600'>
+    <div className='flex justify-between items-center h-16'>
       <Link to='/'>
         <p className='italic text-white md:text-2xl cursor-pointer'><CiPizza size={28} className='inline'/>Pizza-shop</p>
       </Link>
@@ -26,12 +26,12 @@ export const Navbar = () => {
       </button>
     </div>
     {isOpen && (
-      <div className='md:hidden flex flex-col space-y-6 py-20 bg-white items-center'>
-        <Link to = '/' className='px-6 py-2 rounded-2xl hover:bg-blue-600 '>Home</Link>
-        <Link to = '/menu' className='px-6 py-2 rounded-2xl hover:bg-blue-600 '>Menu</Link>
-        <Link to = '/order' className='px-6 py-2 rounded-2xl hover:bg-blue-600 '>Online Orders</Link>
-        <Link to = '/about' className='px-6 py-2 rounded-2xl hover:bg-blue-600 '>About</Link>
-        <Link to = '/contact' className='px-6 py-2 rounded-2xl hover:bg-blue-600 '>Contact</Link>
+      <div className='md:hidden flex flex-col py-5 bg-white items-center'>
+        <Link to = '/' className='px-96 py-2 rounded-2xl hover:bg-blue-600 '>Home</Link>
+        <Link to = '/menu' className='px-96 py-2 rounded-2xl hover:bg-blue-600 '>Menu</Link>
+        <Link to = '/order' className='px-96 py-2 rounded-2xl hover:bg-blue-600 '>Online Orders</Link>
+        <Link to = '/about' className='px-96 py-2 rounded-2xl hover:bg-blue-600 '>About</Link>
+        <Link to = '/contact' className='px-96 py-2 rounded-2xl hover:bg-blue-600 '>Contact</Link>
       </div>
     )}
     

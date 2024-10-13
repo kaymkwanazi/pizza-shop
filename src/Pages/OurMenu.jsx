@@ -38,7 +38,7 @@ export const OurMenu = () => {
   
   return (
     <>
-    <div className='relative h-96 bg-cover bg-center' 
+    <div className='relative h-96 bg-cover bg-center max-w-full' 
       style={{backgroundImage:`url(${pizzaPic})`}}>
       <div className='absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center'>
         <h1 className='text-2xl md:text-6xl font-bold text-white'>MENU</h1>

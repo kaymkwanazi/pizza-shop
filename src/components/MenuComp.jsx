@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Menu from '../../Database/menu.json';
 import { useNavigate } from 'react-router-dom';
 
 export const MenuComp = () => {
   const navigate = useNavigate();
+  const [selectedCategory, setSelectedCategory] = useState('All');
 
   const handleItemClick = (item) => {
     navigate(`/IngredientsList/$item.id`, {state: {item}});
@@ -12,7 +13,9 @@ export const MenuComp = () => {
   return (
     <div className="grid cols-1 gap-4 mt-36 md:mt-64">
       <div className='container mx-auto px-5 bg-slate-100 border-2 mb-36'>
-      {Menu[0].menu.map((products, index) => (
+      {Menu[0].menu 
+      .filter((products) => selectedCategory === 'All' || products.category === selectedCategory)
+      .map((products, index) => (
         <div key={index} className="mb-8 p-4">
           <h2 className="text-4xl md:text-6xl text-blue-700 font-bold mb-4">{products.category}</h2>
           <p className="md:text-xl mb-20">{products.description}</p>

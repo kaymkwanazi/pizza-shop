@@ -20,15 +20,12 @@ export const OurMenu = () => {
   console.log('Menu data:',menuData);
 
   //handle category filter
-  const handleCategoryChange = (e) => {
-    setMenu(e.target.value);
+  const handleCategoryChange = (event) => {
+    setSelectedCategory(event.target.value);
+ 
   };
+  console.log('selected category', selectedCategory);
 
-  const filteredMenu = selectedCategory === 'All' 
-  ? menu
-  : menu.filter((menuCategory) => menuCategory.category === selectedCategory);
-
-  console.log('filtered', filteredMenu);
   const handleItemClick = (item) => {
     navigate(`/ingredientsList/${item.id}`, {state: {item}})
   };
@@ -71,34 +68,32 @@ export const OurMenu = () => {
           </select>
 
           {/* displaying filtered menu */}
-        {Array.isArray(filteredMenu) && filteredMenu.length > 0 ? (
-          filteredMenu.map((menuCategory) => (
-          <div key={menuCategory.category}>
-            <h2>{menuCategory.category}</h2>
-            <p>{menuCategory.description}</p>
-            {Array.isArray(menuCategory.items) && menuCategory.items.map((item) => (
-              <div key={item.id}>
-                <h3>{item.name}</h3>
-                <p>{item.description}</p>
-                <img src={item.imageUrl} alt={item.name} style={{ width: '150px' }} />
-                <ul>
-                  {Array.isArray(item.ingredients) && item.ingredients.map((ingredient, index) => (
-                    <li key={index}>{ingredient}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-          ))
-        ) : (
-          <p>No items found for this category.</p>
-        )}
+        {Array.isArray(menu) && menu.length > 0 &&  (
+          menu.map((menuCategory) => (
+            <div key={menuCategory.category}>
+              <h2>{menuCategory.category}</h2>
+              <p>{menuCategory.description}</p>
+              {Array.isArray(menuCategory.items) && menuCategory.items.map((item) => (
+                <div key={item.id}>
+                  <h3>{item.name}</h3>
+                  <p>{item.description}</p>
+                  <img src={item.imageUrl} alt={item.name} style={{ width: '150px' }} />
+                  <ul>
+                    {Array.isArray(item.ingredients) && item.ingredients.map((ingredient, index) => (
+                      <li key={index}>{ingredient}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+        ))
+      )}
       </div>
         
       </div>
     </div>
     
-    <MenuComp />
+    <MenuComp selectedCategory={selectedCategory}/>
   </>
   )
 }

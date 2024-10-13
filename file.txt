@@ -56,3 +56,33 @@ const Menu = () => {
 };
 
 export default Menu;
+
+
+
+
+/////////////////////////
+
+
+
+{filteredMenu && filteredMenu.length > 0 ? (
+        filteredMenu.map((menuCategory) => (
+          <div key={menuCategory.category}>
+            <h2>{menuCategory.category}</h2>
+            <p>{menuCategory.description}</p>
+            {menuCategory.items?.map((item) => (
+              <div key={item.id}>
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <img src={item.imageUrl} alt={item.name} style={{ width: '150px' }} />
+                <ul>
+                  {item.ingredients?.map((ingredient, index) => (
+                    <li key={index}>{ingredient}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        ))
+      ) : (
+        <p>No items found for this category.</p>
+      )}

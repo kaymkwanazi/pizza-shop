@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Menu from '../../Database/menu.json';
 import { useNavigate } from 'react-router-dom';
 
-export const MenuComp = () => {
+export const MenuComp = ({selectedCategory}) => {
   const navigate = useNavigate();
-  const [selectedCategory, setSelectedCategory] = useState('All');
+
 
   const handleItemClick = (item) => {
     navigate(`/IngredientsList/$item.id`, {state: {item}});

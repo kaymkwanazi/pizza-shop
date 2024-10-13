@@ -22,9 +22,15 @@ export const OurMenu = () => {
   //handle category filter
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
- 
+
   };
   console.log('selected category', selectedCategory);
+
+  const filteredMenu = selectedCategory === 'All' 
+  ? menu
+  : menu.filter((selectedCategory) => menuData.category === selectedCategory);
+
+  console.log('filtered menu', filteredMenu);
 
   const handleItemClick = (item) => {
     navigate(`/ingredientsList/${item.id}`, {state: {item}})

@@ -20,7 +20,7 @@ export const Navbar = () => {
         <Link to = '/contact' className='px-6 py-2 rounded-2xl hover:bg-blue-600 text-white'>Contact</Link>
       </div>
     </div>
-    <div className='md:hidden text-white flex items-center'>
+    <div className='md:hidden text-white'>
       <button onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <FaTimes /> : <FaBars />}
       </button>

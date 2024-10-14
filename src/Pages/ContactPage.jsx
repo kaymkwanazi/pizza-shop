@@ -9,8 +9,8 @@ export const ContactPage = () => {
     <div className='relative min-h-screen bg-cover bg-center' 
       style={{backgroundImage:`url(${pizzaCont})`}}>
         <div className='absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center'>
-            <h1 className='text-2xl md:text-6xl font-bold text-white'>CONTACT</h1>
-            <p className='text-white mt-10 text-xl'> At The Pizza Shop, we are always looking for ways to improve to ensure you get the best service.
+            <h1 className='text-6xl font-bold text-white'>CONTACT</h1>
+            <p className='text-white mt-10 text-center text-xl'> At The Pizza Shop, we are always looking for ways to improve to ensure you get the best service.
             </p>
         </div>
     </div>

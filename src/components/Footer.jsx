@@ -17,7 +17,7 @@ export const Footer = () => {
               <FaInstagram size={28} />
               <FaYoutube size={28} />
             </div>
-            <div className='text-white mt-10 mb-5'>
+            <div className='text-white mt-5 mb-5'>
               <p className='mb-3'><FaLocationDot className='inline'/> 125 Church street, Pretoria CBD</p>
               <p className='mb-3'><FaPhone className='inline' /> +27 12 459 2652</p>
               <p className='mb-3 '><FaEnvelope className='inline' /> info@thepizzashop.co.za</p>

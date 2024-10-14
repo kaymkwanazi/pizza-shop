@@ -6,7 +6,7 @@ import sauce from '../images/pizza-sauce.jpg'
 export const Ingredients = () => {
   return (
     
-        <div className='container mx-auto px-20  flex justify-center items-center'>
+        <div className='container mx-auto px-4  flex justify-center items-center'>
             <div className='grid cols-1 md:grid-cols-3 gap-20 mt-20 mb-20'>
                 <div>
                     <img src={vegetables} className='rounded-full size-56' ></img>

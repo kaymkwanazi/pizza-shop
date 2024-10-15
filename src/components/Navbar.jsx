@@ -8,8 +8,8 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-   <nav className='z-50 max-w-full bg-slate-600'>
-    <div className='flex justify-between items-center h-14 md:px-10'>
+   <nav className='z-50 bg-slate-600'>
+    <div className='flex justify-between items-center h-14 pl-5'>
       <Link to='/'>
         <p className='italic text-white md:text-2xl cursor-pointer'><CiPizza size={28} className='inline'/>Pizza-shop</p>
       </Link>

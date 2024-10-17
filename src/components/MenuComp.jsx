@@ -11,14 +11,14 @@ export const MenuComp = ({selectedCategory}) => {
   };
   
   return (
-    <div className="grid cols-1 gap-4 mt-36 md:mt-64">
+    <div className="grid cols-1 gap-4">
       <div className='container mx-auto px-5 bg-slate-100 border-2 mb-36'>
       {Menu[0].menu 
       .filter((products) => selectedCategory === 'All' || products.category === selectedCategory)
       .map((products, index) => (
         <div key={index} className="mb-8 p-4">
-          <h2 className="text-4xl md:text-6xl text-blue-700 font-bold mb-4">{products.category}</h2>
-          <p className="md:text-xl mb-20">{products.description}</p>
+          {/* <h2 className="text-4xl md:text-6xl text-blue-700 font-bold mb-4">{products.category}</h2>
+          <p className="md:text-xl mb-20">{products.description}</p> */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-20">
             {products.items.map((item) => (
               <div key={item.id} className="flex flex-col" >

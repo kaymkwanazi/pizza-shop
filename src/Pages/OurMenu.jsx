@@ -38,7 +38,7 @@ export const OurMenu = () => {
   
   return (
     <>
-    <div className='relative h-96 bg-cover bg-center max-w-full' 
+    <div className='relative h-96 bg-cover bg-center' 
       style={{backgroundImage:`url(${pizzaPic})`}}>
       <div className='absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center'>
         <h1 className='text-6xl font-bold text-white'>MENU</h1>
@@ -63,16 +63,9 @@ export const OurMenu = () => {
                 
             </div>
         </div>
-        <div className='pl-5'>
-          {/* category filter */}
-          <select value={selectedCategory} onChange={handleCategoryChange}>
-            <option value='All'>All</option>
-            <option value='Pasta'>Pasta</option>
-            <option value='Pizza'>Pizza</option>
-            <option value='Dessert'>Dessert</option>
-            
-          </select>
-
+      </div>
+    </div>
+      <div className=''>
           {/* displaying filtered menu */}
         {Array.isArray(menu) && menu.length > 0 &&  (
           menu.map((menuCategory) => (
@@ -95,10 +88,18 @@ export const OurMenu = () => {
         ))
       )}
       </div>
-        
-      </div>
+   {/* Search and filtering */}
+    <div className='flex justify-center space-x-5 pt-64 pb-10'>
+        <h2 className='text-lg'>Filter</h2>
+        <select value={selectedCategory} onChange={handleCategoryChange} className='border-2'>
+          <option value='All'>All</option>
+            <option value='Pasta'>Pasta</option>
+            <option value='Pizza'>Pizza</option>
+            <option value='Dessert'>Dessert</option>  
+          </select>
+            <input type='text' placeholder='search item' className=' pl-2 rounded-full border-2'/>
+            
     </div>
-    
     <MenuComp selectedCategory={selectedCategory}/>
   </>
   )

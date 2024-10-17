@@ -9,6 +9,7 @@ import { Footer } from './components/Footer'
 import { ContactPage } from './Pages/ContactPage'
 import { IngredientsList } from './components/IngredientsList'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -18,6 +19,7 @@ function App() {
     <BrowserRouter>
     <Navbar />
       <Routes>
+        
         <Route path='' element={<Home />}></Route>
         <Route path='/menu' element={<OurMenu />}></Route>
         <Route path='/ingredientsList/:id' element= {<IngredientsList />} />

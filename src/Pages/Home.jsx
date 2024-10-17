@@ -28,7 +28,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <Ingredients />
+      {/* <Ingredients /> */}
       <Specialities />
     </>
   )

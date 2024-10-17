@@ -11,12 +11,7 @@ export const Footer = () => {
       <div className='grid cols-1 mb-5 space-y-0 md:grid-cols-2 gap-10 md:space-y-5'>
         <div>
           <p className='italic text-white text-xl md:text-2xl cursor-pointer mt-5'><CiPizza size={28} className='inline'/>Pizza-shop</p>
-           <div className='text-white flex space-x-5 mt-5'>
-              <FaTwitter size={28} />
-              <FaFacebook size={28}/>
-              <FaInstagram size={28} />
-              <FaYoutube size={28} />
-            </div>
+           
             <div className='text-white mt-5 mb-5'>
               <p className='mb-3'><FaLocationDot className='inline'/> 125 Church street, Pretoria CBD</p>
               <p className='mb-3'><FaPhone className='inline' /> +27 12 459 2652</p>
@@ -24,10 +19,23 @@ export const Footer = () => {
             </div>
         </div>
         <div className='mt-5 font-bold text-center'>
-        <Link to = '/' className='px-6 py-2 rounded-2xl hover:text-gray-300 text-white'>Home</Link>
-        <Link to = '/menu' className='px-6 py-2 rounded-2xl hover:text-gray-300 text-white'>Menu</Link>
-        <Link to = '/about' className='px-6 py-2 rounded-2xl hover:text-gray-300 text-white'>About</Link>
-        <Link to = '/contact' className='px-6 py-2 rounded-2xl hover:text-gray-300 text-white'>Contact</Link>
+          <Link to = '/' className='px-6 py-2 rounded-2xl hover:text-gray-300 text-white'>Home</Link>
+          <Link to = '/menu' className='px-6 py-2 rounded-2xl hover:text-gray-300 text-white'>Menu</Link>
+          <Link to = '/about' className='px-6 py-2 rounded-2xl hover:text-gray-300 text-white'>About</Link>
+          <Link to = '/contact' className='px-6 py-2 rounded-2xl hover:text-gray-300 text-white'>Contact</Link>
+          
+          <div className='text-white flex justify-center'>
+            <div className='flex flex-col pt-8 text-xl'>
+              <h3>Follow us</h3>
+              <div className='flex space-x-5 pt-3'>
+                <FaTwitter size={28} />
+                <FaFacebook size={28}/>
+                <FaInstagram size={28} />
+                <FaYoutube size={28} />
+              </div>  
+            </div>
+            
+          </div>
         </div>
       </div>
       <div className='text-white border-t'>
